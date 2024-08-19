@@ -1,13 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --MDC-YELLOW: #FCA311;
+  --MDC-BLACK: #121212;
+}
+
+::selection {
+  background-color: var(--MDC-YELLOW);
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--MDC-BLACK);
+  font-family: "Roboto Condensed", sans-serif;
+  box-sizing: border-box;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.App {
+  display: block;
+  color: white;
+  max-width: 1500px;
+  width: 100%;
+  background-color: var(--MDC-BLACK);
+  margin: 0 auto;
+}
+
+.Btn-Yellow {
+  background-color: var(--MDC-YELLOW);
+  padding: .2em .8em;
+  border-radius: 20px;
+  font-size: .9em !important;
+}
+
+.SectionBreaker {
+  background-color: var(--MDC-YELLOW);
+  height: 10px;
+  border: none;
+  margin: 0 1em;
+}
+
+.Stretchbar {
+    width: 100px;
+    height: 4px;
+    background-color: var(--MDC-YELLOW);
+    border: none;
+    margin: 0;
 }

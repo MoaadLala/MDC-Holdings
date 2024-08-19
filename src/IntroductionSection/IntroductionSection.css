@@ -1,0 +1,54 @@
+.IntroductionSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 2em;
+}
+
+.IntroductionSection-Left > h1 {
+    text-align: center;
+    margin: 0.3em 0 2em 0em;
+    color: var(--MDC-YELLOW);
+}
+
+.IntroductionSection-Left > .Stretchbar {
+    margin: 1em auto 0 auto;
+    width: 60px;
+}
+
+.IntroductionSection-Left-EPC {
+    background-image: url('../images/EPCBanner.webp');
+    background-size: cover;
+    background-position: 50%;
+}
+
+.IntroductionSection-Left-EPC-Container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2em;
+}
+
+.IntroductionSection-Left-EPC-Container h1 {
+    font-size: 3em;
+    margin-left: .5em;
+    margin-top: 0;
+}
+
+.IntroductionSection-Left-EPC-Container > .Stretchbar {
+    margin-left: 1.6em;
+    margin-top: 1em;
+    width: 60px;
+}
+
+.IntroductionSection-Left-EPC-Container li {
+    font-size: 1.5em;
+    margin: .3em;
+}
+
+@media only screen and (max-width: 870px) {
+    .IntroductionSection-Left h1 {
+        margin-bottom: 0;
+    }
+
+    .IntroductionSection {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,87 @@
+.Navbar {
+    background-color: #202020;
+    /* box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset; */
+    /* box-shadow: rgba( 252, 163, 17, 0.4) 0px 5px, rgba(252, 163, 17, 0.3) 0px 10px, rgba(252, 163, 17, 0.2) 0px 15px, rgba(252, 163, 17, 0.1) 0px 20px, rgba(252, 163, 17, 0.05) 0px 25px; */
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    margin: 0 1em;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+}
+
+.Navbar-LargeScreen {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Navbar-SmallScreen {
+    width: 100%;
+    text-align: center;
+    padding-top: .5em;
+    display: none;
+}
+
+.Navbar-SmallScreen img {
+    margin: auto;
+}
+
+.Navbar-SmallScreen-Top button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 2em;
+    text-align: right;
+    margin-right: 0.3em;
+    position: absolute;
+    top: 13px;
+    right: 0;
+}
+
+.Navbar-Hypers {
+    margin-right: 0.5em;
+}
+
+.Navbar-SmallScreen-Hypers {
+    margin-top: 1em;
+    overflow: hidden;
+}
+
+.Navbar-Hypers > a, .Navbar-SmallScreen-Hypers > div > a {
+    text-decoration: none;
+    color: white;
+    margin: .5em;
+    text-transform: uppercase;
+    font-size: .9em;
+}
+
+.Navbar-SmallScreen-Hypers > a {
+    display: block;
+    text-align: center;
+    margin: 1em
+}
+
+@media only screen and (max-width: 650px) {
+    .Navbar-LargeScreen {
+        display: none;
+    }
+
+    .Navbar-SmallScreen {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Navbar-SmallScreen-Hypers > div {
+        margin: 1em 0;
+    }
+
+    .Navbar-SmallScreen-Top {
+        display: block;
+    }
+
+    .Navbar-SmallScreen-Top img {
+        margin: .5em;
+    } 
+}

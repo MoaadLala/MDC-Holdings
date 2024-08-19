@@ -1,0 +1,57 @@
+.IntroductionItem {
+    background-size: cover;
+    background-position: 50%;
+    margin: 3em;
+    border-radius: .5em;
+    box-shadow: rgba(252, 163, 17, 0.4) -5px 5px, rgba(252, 163, 17, 0.3) -10px 10px, rgba(252, 163, 17, 0.2) -15px 15px, rgba(252, 163, 17, 0.1) -20px 20px, rgba(252, 163, 17, 0.05) -25px 25px;
+}
+
+.IntroductionItem-Container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2em;
+    transition: all 1s ease-in;
+}
+
+.IntroductionItem-Container:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.IntroductionItem-Container > h1 {
+    font-size: 3em;
+    margin-left: .5em;
+    margin-top: 0;
+}
+
+.IntroductionItem-Container > .Stretchbar {
+    margin-left: 1.6em;
+    margin-top: 1em;
+    width: 60px;
+}
+
+.IntroductionItem-Container li {
+    font-size: 1.5em;
+    margin: .3em;
+}
+
+@media only screen and (max-width: 950px) {
+    .IntroductionItem {
+        scale: .9;
+        margin: 1em;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .IntroductionItem {
+        margin: 1em 3em;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .IntroductionItem {
+        margin: 1em;
+    }
+
+    .IntroductionItem-Container {
+        padding: 2em 1em;
+    }
+}

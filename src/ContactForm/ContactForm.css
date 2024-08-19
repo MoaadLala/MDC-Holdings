@@ -1,0 +1,116 @@
+.ContactForm {
+    display: grid;
+    grid-template-columns: .6fr .4fr;
+    gap: 1em;
+}
+
+.ContactForm form {
+    margin-left: -1em;
+}
+
+.ContactForm-NameSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ContactForm-NameSection .ContactForm-Box {
+    margin-bottom: 0;
+}
+
+.ContactForm-Box input, .ContactForm-Box textarea {
+    width: 100%;
+    background-color: lightgrey;
+    border: none;
+    border-radius: .3em;
+    padding: .5em;
+    margin-top: .2em;
+    font-size: 1.1em;
+    text-transform: capitalize;
+}
+
+.ContactForm-Box label {
+    font-weight: bold;
+    color: var(--MDC-BLACK);
+    cursor: text;
+}
+
+.ContactForm-Box {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.ContactForm-MessageSection textarea {
+    min-height: 200px;
+    text-transform: none;
+    font-size: 1.1;
+    font-family: "Roboto Condensed", sans-serif;
+    resize: none;
+}
+
+.ContactForm-Submit {
+    color: white;
+    border: none;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: .5em 1em;
+    border-radius: .2em;
+    background-color: var(--MDC-YELLOW);
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.ContactForm-Submit:hover {
+    scale: 1.05;
+}
+
+.ContactForm-SubmitBtnContainer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ContactForm-Information {
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.ContactForm-Eamil {
+    color: var(--MDC-YELLOW);
+    cursor: pointer;
+    transition: .2s ease;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 815px) {
+    .ContactForm {
+        grid-template-columns: 1fr;
+    }
+    .ContactForm-Information {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    #ContactUs .WhiteContainer {
+        padding: 2em;
+    }
+
+    .ContactForm-SubmitBtnContainer {
+        justify-content: center;
+        margin-left: 1em;
+    }
+
+    .ContactForm-Submit {
+        width: 80%;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .ContactForm-NameSection {
+        grid-template-columns: 1fr;
+    }    
+}

@@ -1,0 +1,25 @@
+.WhiteContainer {
+    background-color: white;
+    color: black;
+    padding: 4em;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+    border-top: 3em var(--MDC-YELLOW);
+    margin: 0 1em 1em 1em;
+}
+
+.WhiteContainer h2 {
+    margin: .5em 0;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 570px) {
+    .WhiteContainer h2, .WhiteContainer p {
+        text-align: center;
+    }
+
+    .WhiteContainer .Stretchbar {
+        margin: 0 auto;
+        width: 150px;
+    }
+}

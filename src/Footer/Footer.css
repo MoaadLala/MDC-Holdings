@@ -1,0 +1,17 @@
+.Footer {
+    margin-top: 5em;
+    margin-bottom: 3em;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.Footer img {
+    width: 300px;
+}
+
+@media only screen and (max-width: 650px) {
+    .Footer img {
+        width: 250px;
+    }
+}
